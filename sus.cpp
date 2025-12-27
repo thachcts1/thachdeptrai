@@ -4,21 +4,19 @@
 
 using namespace std;
 
-/* ===== Trang thai cong viec ===== */
 enum Status {
     DANG_LAM = 1,
     HOAN_THANH,
     KHONG_HOAN_THANH
 };
 
-/* ===== Lop Work ===== */
 class Work {
 private:
-    int id;                 // ma cong viec
-    string content;         // noi dung cong viec
-    int hours;              // so gio thuc hien
-    string createDate;      // ngay tao
-    Status status;          // trang thai
+    int id;                
+    string content;        
+    int hours;            
+    string createDate;     
+    Status status;         
 
 public:
     // Ham tao
@@ -27,7 +25,7 @@ public:
         content = _content;
         hours = _hours;
         createDate = _date;
-        status = DANG_LAM; // mac dinh
+        status = DANG_LAM; 
     }
 
     // Getter
@@ -46,9 +44,8 @@ public:
 
     void setStatus(Status newStatus) {
         status = newStatus;
-    }
-
-    // Hien thi thong tin cong viec
+    }    
+    //show ttcv
     void display() {
         cout << "ID: " << id
              << " | Noi dung: " << content
