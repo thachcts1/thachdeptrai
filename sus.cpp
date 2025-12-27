@@ -64,7 +64,6 @@ public:
     }
 };
 
-/* ===== Lop WorkManager ===== */
 class WorkManager {
 private:
     vector<Work> works;   // danh sach cong viec
@@ -176,7 +175,6 @@ public:
     }
 };
 
-/* ===== MAIN ===== */
 int main() {
     WorkManager manager;
     int choice;
